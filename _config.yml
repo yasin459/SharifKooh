@@ -1,7 +1,7 @@
 title: SharifKooh Mountaineering Group
 description: A community of mountain enthusiasts sharing adventures and experiences
-baseurl: ""
-url: ""
+baseurl: "/SharifKooh"
+url: "https://yasin459.github.io"
 
 # Build settings
 markdown: kramdown
@@ -18,8 +18,8 @@ collections:
 
 # Prose.io configuration
 prose:
-  rooturl: ''
-  siteurl: ''
+  rooturl: '/SharifKooh'
+  siteurl: 'https://yasin459.github.io'
   relativeLinks: ''
   ignore: [.git/, _site/, node_modules/]
   media: 'assets'
