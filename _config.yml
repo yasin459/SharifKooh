@@ -15,6 +15,12 @@ collections:
   events:
     output: true
     permalink: /events/:title/
+  sections:
+    output: true
+    permalink: /sections/:title/
+  calendar:
+    output: true
+    permalink: /calendar/:title/
 
 # Prose.io configuration
 prose:
@@ -49,6 +55,11 @@ prose:
           element: "text"
           label: "Participants"
           placeholder: "List of participants"
+      - name: "images"
+        field:
+          element: "text"
+          label: "Images"
+          placeholder: "Comma-separated list of image paths"
     events:
       - name: "layout"
         field:
@@ -73,4 +84,49 @@ prose:
         field:
           element: "textarea"
           label: "Description"
-          placeholder: "Event details" 
+          placeholder: "Event details"
+    sections:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "section"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Section Title"
+          placeholder: "Enter section title"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          placeholder: "Section description"
+      - name: "members"
+        field:
+          element: "text"
+          label: "Members"
+          placeholder: "Comma-separated list of members"
+    calendar:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "calendar"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Enter calendar entry title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          placeholder: "YYYY-MM-DD"
+      - name: "location"
+        field:
+          element: "text"
+          label: "Location"
+          placeholder: "Mountain/Region name"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          placeholder: "Calendar entry details" 

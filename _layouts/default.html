@@ -23,6 +23,19 @@
                         <a class="nav-link" href="{{ '/events' | relative_url }}">Upcoming Events</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ '/calendar' | relative_url }}">Climbing Calendar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Group Sections
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for section in site.sections %}
+                            <li><a class="dropdown-item" href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ '/about' | relative_url }}">About Us</a>
                     </li>
                 </ul>

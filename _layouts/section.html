@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="section">
+    <header class="mb-4">
+        <h1>{{ page.title }}</h1>
+        <div class="text-muted">
+            <p>{{ page.description }}</p>
+        </div>
+    </header>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    {% if page.members %}
+    <div class="mt-4">
+        <h3>Section Members</h3>
+        <ul class="list-group">
+            {% for member in page.members %}
+            <li class="list-group-item">{{ member }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</article> 
