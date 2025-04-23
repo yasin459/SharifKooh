@@ -1,0 +1,76 @@
+title: SharifKooh Mountaineering Group
+description: A community of mountain enthusiasts sharing adventures and experiences
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  reports:
+    output: true
+    permalink: /reports/:title/
+  events:
+    output: true
+    permalink: /events/:title/
+
+# Prose.io configuration
+prose:
+  rooturl: ''
+  siteurl: ''
+  relativeLinks: ''
+  ignore: [.git/, _site/, node_modules/]
+  media: 'assets'
+  metadata:
+    reports:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "report"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Enter the report title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          placeholder: "YYYY-MM-DD"
+      - name: "location"
+        field:
+          element: "text"
+          label: "Location"
+          placeholder: "Mountain/Region name"
+      - name: "participants"
+        field:
+          element: "text"
+          label: "Participants"
+          placeholder: "List of participants"
+    events:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "event"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Enter the event title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          placeholder: "YYYY-MM-DD"
+      - name: "location"
+        field:
+          element: "text"
+          label: "Location"
+          placeholder: "Mountain/Region name"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          placeholder: "Event details" 
